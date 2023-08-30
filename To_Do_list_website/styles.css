@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2eb700;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.add-task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#taskTitle {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #1ac100;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #21b300;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+}
+
+li:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+li span {
+    margin-right: 10px;
+}
+
+li button {
+    background-color: #35b2dc;
+}
+
+li button.edit {
+    background-color: #5107ff;
+    margin-right: 5px;
+}
+
+.task-number {
+    position: absolute;
+    left: -30px;
+    top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
